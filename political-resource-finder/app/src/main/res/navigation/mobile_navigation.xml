@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_find_polls">
+
+    <fragment
+        android:id="@+id/navigation_find_polls"
+        android:name="com.example.politicalresourcefinder.ui.findPolls.FindPollsFragment"
+        android:label="@string/title_find_polls"
+        tools:layout="@layout/fragment_find_polls" />
+
+    <fragment
+        android:id="@+id/navigation_how_to_vote"
+        android:name="com.example.politicalresourcefinder.ui.howToVote.HowToVoteFragment"
+        android:label="@string/title_how_to_vote"
+        tools:layout="@layout/fragment_how_to_vote" />
+
+    <fragment
+        android:id="@+id/navigation_elections"
+        android:name="com.example.politicalresourcefinder.ui.elections.ElectionsFragment"
+        android:label="@string/title_elections"
+        tools:layout="@layout/fragment_elections" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.politicalresourcefinder.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.politicalresourcefinder.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+
+</navigation>

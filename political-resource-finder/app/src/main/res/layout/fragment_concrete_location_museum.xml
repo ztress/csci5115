@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="170dp"
+                android:text="Phone:          612-625-9494"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="200dp"
+                android:text="Hours:           9am - 11pm"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/museumPhoto"
+                android:layout_width="108dp"
+                android:layout_height="106dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/museum" />
+
+            <TextView
+                android:id="@+id/museumTitle"
+                android:layout_width="200dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="16dp"
+                android:text="Weisman Art \nMuseum"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="241dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="80dp"
+                android:text="333 E River Pkwy, Minneapolis, MN 55455"
+                android:id="@+id/address" />
+
+            <TextView
+                android:id="@+id/instruction"
+                android:layout_width="376dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="130dp"
+                android:text="Park in adjacent parking lot and go upstairs, please remains quiet indoors."
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/meseumClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="16dp"
+                android:text="X"
+                android:textColor="#FF3535" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
